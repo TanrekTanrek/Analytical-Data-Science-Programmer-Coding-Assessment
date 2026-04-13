@@ -1,0 +1,51 @@
+=== AE Visualizations Creation Log ===
+Execution started: 2026-04-13 17:53:42 
+R version: R version 4.5.0 (2025-04-11) 
+
+Loaded packages:
+   ggplot2 : 4.0.2 
+   pharmaverseadam : 1.3.0 
+   dplyr : 1.2.1 
+
+Source data loaded:
+  ADAE: 1191 records, 225 subjects
+  ADSL: 306 subjects
+
+TEAEs after filter: 1122 records, 217 subjects
+
+--- Plot 1: AE Severity by Arm ---
+Severity counts by arm:
+# A tibble: 9 × 3
+  ACTARM               AESEV    ae_count
+  <chr>                <fct>       <int>
+1 Placebo              MILD          210
+2 Placebo              MODERATE       65
+3 Placebo              SEVERE          6
+4 Xanomeline High Dose MILD          286
+5 Xanomeline High Dose MODERATE      118
+6 Xanomeline High Dose SEVERE         10
+7 Xanomeline Low Dose  MILD          232
+8 Xanomeline Low Dose  MODERATE      170
+9 Xanomeline Low Dose  SEVERE         25
+
+Plot 1 saved: ~/Analytical-Data-Science-Programmer-Coding-Assessment/question_3_tlg/ae_severity_by_arm.png 
+
+--- Plot 2: Top 10 TEAEs with CI ---
+Overall N (unique subjects in ADSL): 306 
+Top 10 TEAEs:
+                        AETERM  n       pct  ci_lower ci_upper
+1                     PRURITUS 54 17.647059 13.543905 22.38952
+2    APPLICATION SITE PRURITUS 50 16.339869 12.377596 20.96822
+3                     ERYTHEMA 36 11.764706  8.377398 15.91385
+4    APPLICATION SITE ERYTHEMA 30  9.803922  6.712832 13.69945
+5                         RASH 26  8.496732  5.625393 12.20180
+6  APPLICATION SITE DERMATITIS 21  6.862745  4.298029 10.29933
+7  APPLICATION SITE IRRITATION 21  6.862745  4.298029 10.29933
+8                    DIZZINESS 21  6.862745  4.298029 10.29933
+9                    DIARRHOEA 17  5.555556  3.269259  8.74616
+10           SINUS BRADYCARDIA 17  5.555556  3.269259  8.74616
+
+Plot 2 saved: ~/Analytical-Data-Science-Programmer-Coding-Assessment/question_3_tlg/ae_top10_forest.png 
+
+=== Visualization creation completed successfully ===
+Finished: 2026-04-13 17:53:43 

@@ -1,0 +1,61 @@
+=== ADSL Creation Log ===
+Execution started: 2026-04-13 13:46:49 
+R version: R version 4.5.0 (2025-04-11) 
+Output directory: ~/Analytical-Data-Science-Programmer-Coding-Assessment/question_2_adam 
+
+G3;
+Attaching package: ‘lubridate’
+
+gG3;The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+gLoaded packages:
+   admiral : 1.4.1 
+   dplyr : 1.2.1 
+   pharmaversesdtm : 1.4.1 
+   lubridate : 1.9.5 
+   stringr : 1.6.0 
+
+Source data loaded and blanks converted to NA:
+  DM: 306 subjects
+  VS: 29643 records
+  EX: 591 records
+  DS: 850 records
+  AE: 1191 records
+
+ADSL initialised from DM: 306 subjects, 27 variables.
+Derived TRT01P, TRT01A.
+Derived AGEGR9, AGEGR9N.
+EX datetimes derived (EXSTDTM, EXENDTM).
+Derived TRTSDTM (first valid exposure start).
+Derived TRTEDTM (last valid exposure end).
+Derived ITTFL.
+Derived LSTAVLDT (last available date across VS, AE, DS, EX).
+
+--- ADSL Summary ---
+Rows:     306 
+Columns:  37 
+Variables:
+   STUDYID, USUBJID, SUBJID, RFSTDTC, RFENDTC, RFXSTDTC, RFXENDTC, RFICDTC, RFPENDTC, DTHDTC, DTHFL, SITEID, BRTHDTC, AGE, AGEU, SEX, RACE, ETHNIC, ARMCD, ARM, ACTARMCD, ACTARM, COUNTRY, DMDTC, DMDY, ARMNRS, ACTARMUD, TRT01P, TRT01A, AGEGR9, AGEGR9N, TRTSDTM, TRTSTMF, TRTEDTM, TRTETMF, ITTFL, LSTAVLDT 
+TRT01P distribution:
+
+             Placebo       Screen Failure Xanomeline High Dose 
+                  86                   52                   84 
+ Xanomeline Low Dose 
+                  84 
+ITTFL distribution:
+
+  Y 
+306 
+AGEGR9 distribution:
+
+    >50 18 - 50 
+    305       1 
+
+Outputs written:
+  RDS: ~/Analytical-Data-Science-Programmer-Coding-Assessment/question_2_adam/adsl.rds 
+  CSV: ~/Analytical-Data-Science-Programmer-Coding-Assessment/question_2_adam/adsl.csv 
+
+=== ADSL creation completed successfully ===
+Finished: 2026-04-13 13:46:52 
