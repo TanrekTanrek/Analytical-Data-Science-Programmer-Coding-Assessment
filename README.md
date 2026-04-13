@@ -67,7 +67,7 @@ install.packages(c(
   "pharmaverseadam", "dplyr", "lubridate", "stringr",
   "gtsummary", "gt", "ggplot2"
 ))
-```r
+```
 
 ### Python (Question 4)
 
