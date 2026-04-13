@@ -23,35 +23,37 @@ Every script produces a **log file** as evidence of an error-free run.
 
 ## Repository Structure
 
-├── README.md
-├── question_1_sdtm/
-│ ├── ds_sdtm_mapping.R # Main script
-│ ├── sdtm_ct.csv # Controlled terminology (input)
-│ ├── DS.csv # Output: SDTM DS dataset
-│ └── ds_sdtm_mapping.log # Execution log
-│
-├── question_2_adam/
-│ ├── create_adsl.R # Main script
-│ ├── adsl.rds # Output: ADSL (RDS)
-│ ├── adsl.csv # Output: ADSL (CSV)
-│ └── create_adsl.log # Execution log
-│
-├── question_3_tlg/
-│ ├── 01_create_ae_summary_table.R # AE summary table script
-│ ├── 02_create_visualizations.R # Visualization script
-│ ├── ae_summary_table.html # Output: Summary table
-│ ├── ae_summary_table.pdf # Output: Summary table (PDF)
-│ ├── ae_severity_by_arm.png # Output: Stacked bar chart
-│ ├── ae_top10_forest.png # Output: Top 10 TEAEs plot
-│ ├── 01_create_ae_summary_table.log
-│ └── 02_create_visualizations.log
-│
-└── question_4_genai/
-├── clinical_trial_agent.py # Main script
-├── adae.csv # Input: ADAE dataset
-├── .env # OpenAI API key (not committed)
-└── clinical_trial_agent.log # Execution log
-
+| Folder / File | Description |
+|---|---|
+| **`README.md`** | This file |
+| | |
+| **`question_1_sdtm/`** | **SDTM DS domain mapping** |
+| `  ds_sdtm_mapping.R` | Main script |
+| `  sdtm_ct.csv` | Controlled terminology (input) |
+| `  DS.csv` | Output: SDTM DS dataset |
+| `  ds_sdtm_mapping.log` | Execution log |
+| | |
+| **`question_2_adam/`** | **ADaM ADSL creation** |
+| `  create_adsl.R` | Main script |
+| `  adsl.rds` | Output: ADSL dataset (RDS) |
+| `  adsl.csv` | Output: ADSL dataset (CSV) |
+| `  create_adsl.log` | Execution log |
+| | |
+| **`question_3_tlg/`** | **Tables, Listings & Graphs** |
+| `  01_create_ae_summary_table.R` | AE summary table script |
+| `  02_create_visualizations.R` | Visualization script |
+| `  ae_summary_table.html` | Output: Summary table (HTML) |
+| `  ae_summary_table.pdf` | Output: Summary table (PDF) |
+| `  ae_severity_by_arm.png` | Output: Stacked bar chart |
+| `  ae_top10_forest.png` | Output: Top 10 TEAEs dot plot |
+| `  01_create_ae_summary_table.log` | Execution log (table) |
+| `  02_create_visualizations.log` | Execution log (visualizations) |
+| | |
+| **`question_4_genai/`** | **LLM-powered AE query agent** |
+| `  clinical_trial_agent.py` | Main script |
+| `  adae.csv` | Input: ADAE dataset |
+| `  .env` | OpenAI API key (not committed) |
+| `  clinical_trial_agent.log` | Execution log |
 
 ---
 
