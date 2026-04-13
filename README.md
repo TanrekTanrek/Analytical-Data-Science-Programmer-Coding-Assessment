@@ -70,21 +70,30 @@ install.packages(c(
 ```
 
 ### Python (Question 4)
-
+```r
 pip install pandas python-dotenv langchain-openai langchain-core
-
+```
 Create question_4_genai/.env:
+```r
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxx
-
+```
 ## How to Run Everything
 
 ### Question 1 — SDTM DS Mapping
+```r
 Rscript question_1_sdtm/ds_sdtm_mapping.R
+```
 ### Question 2 — ADaM ADSL
+```r
 Rscript question_2_adam/create_adsl.R
+```
 ### Question 3 — TLGs
+```r
 Rscript question_3_tlg/01_create_ae_summary_table.R
 Rscript question_3_tlg/02_create_visualizations.R
+```
 ### Question 4 — LLM Agent
+```r
 cd question_4_genai && python clinical_trial_agent.py
+```
 
