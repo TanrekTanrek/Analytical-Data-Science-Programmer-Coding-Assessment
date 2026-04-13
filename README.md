@@ -1,7 +1,6 @@
 # Analytical Data Science Programmer — Coding Assessment
 
-> **Candidate:** [Your Name]
-> **Date:** [Date]
+> **Candidate:** Philipp Tschannen
 
 ---
 
